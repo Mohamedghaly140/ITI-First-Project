@@ -1,0 +1,156 @@
+:root {
+	--blue: #0096db;
+}
+
+body {
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-custom {
+	background-color: var(--blue);
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+.my-nav-style {
+	box-shadow: 4px 0px 6px #ddd;
+}
+
+.caption {
+	top: 50%;
+	left: 8%;
+	transform: translateY(-50%);
+}
+
+#main .owl-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#main .owl-dots {
+	position: absolute;
+	width: 100%;
+	bottom: 1%;
+	transform: translateY(-50%);
+}
+
+#main .owl-nav button {
+	width: 40px;
+	height: 40px;
+	outline: none;
+	border-radius: 50% !important;
+	background-color: #0096db !important;
+	color: #fff !important;
+	transition: all 0.3s ease;
+}
+
+#main .owl-nav button:hover {
+	background-color: #fff !important;
+	color: var(--blue) !important;
+}
+
+#main .owl-dots button {
+	width: 50px;
+	outline: none;
+	margin: 0 8px;
+}
+
+#main .owl-dots button.active span {
+	background: var(--blue) !important;
+}
+
+#main .owl-dots button span {
+	width: 40px !important;
+	height: 3px !important;
+}
+
+.nav-tabs .nav-link {
+	color: #495057;
+	border-bottom: 3px solid #ccc;
+}
+
+.nav-tabs .nav-link:hover {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color: var(--blue);
+}
+
+.nav-tabs .nav-link.active {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	color: var(--blue);
+	border-bottom-color: var(--blue);
+}
+
+.bgimage {
+	background: url("../images/bgimage.webp") center center no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+#shop .owl-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-top: 0;
+}
+
+#shop .owl-dots {
+	position: absolute;
+	width: 100%;
+	bottom: 1%;
+	transform: translateY(-50%);
+}
+
+#shop .owl-nav button {
+	width: 40px;
+	height: 40px;
+	outline: none;
+	font-size: 2rem;
+	color: #888 !important;
+	transition: all 0.3s ease;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+
+#shop .owl-nav button:hover {
+	background: none !important;
+}
+
+/* ================== Start Register ================== */
+.sign-up-default-bg {
+	position: absolute;
+	width: 100%;
+	background-color: #007dba;
+	height: 250px;
+}
+/* ================== End Register ================== */
+
+/* ================== Start Cart ================== */
+.cart .title h3::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background-color: var(--blue);
+	width: 75px;
+	height: 3px;
+}
+/* ================== End Cart ================== */
